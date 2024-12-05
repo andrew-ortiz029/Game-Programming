@@ -1,0 +1,300 @@
+{
+
+    "start" : { 
+                 "img": "/imgs/LegBreak.jpg",
+                 "next_state" : [ {
+                                     "type" : "button",
+                                     "text" : "Start",
+                                     "next_state" : "standing",
+                                     "input" : "Y"
+                                 }
+                                 ]
+                 },
+     "standing" : {
+                 "text": "<h1>Match Start!</h1>",
+                 "img" : "/imgs/getoutswamp.gif",
+                 "sound" : "/sounds/what-are-you-doing-in-my-swamp-.mp3",
+                 "back_sound" : "/sounds/bkground.mp3",
+                 "next_state" : [
+                                 { 
+                                     "text" : "Pull Guard",
+                                     "next_state" : "connection",
+                                     "input" : "X" 
+                                 },
+                                 { 
+                                     "text" : "Imanari Roll",
+                                     "next_state" : "imanari_saddle",
+                                     "input" : "X" 
+                                 },
+                                 { 
+                                     "text" : "Flying Triangle",
+                                     "next_state" : "triangle",
+                                     "input" : "X" 
+                                 }  
+                                 ]
+                 },
+     "connection" : {
+                 "text": "<h1>Open Guard with a connection. What now?</h1>",
+                 "img" : "/imgs/getoutswamp.gif",
+                 "sound" : "/sounds/what-are-you-doing-in-my-swamp-.mp3",
+                 "back_sound" : "/sounds/bkground.mp3",
+                 "next_state" : [ {
+                                     "type" : "button",
+                                     "text" : "Half Guard",
+                                     "next_state" : "half_guard",
+                                     "input" : "Y"
+                                 },
+                                 { 
+                                     "text" : "RDLR",
+                                     "next_state" : "RDLR",
+                                     "input" : "X" 
+                                 },
+                                 { 
+                                     "text" : "SLX",
+                                     "next_state" : "SLX",
+                                     "input" : "X" 
+                                 } 
+                                 ]
+                 },
+    "half_guard" : {
+                    "text": "<h1>You entered half guard. What now?</h1>",
+                    "img" : "/imgs/getoutswamp.gif",
+                    "sound" : "/sounds/what-are-you-doing-in-my-swamp-.mp3",
+                    "back_sound" : "/sounds/bkground.mp3",
+                    "next_state" : [ {
+                                        "type" : "button",
+                                        "text" : "Attack Lower Body",
+                                        "next_state" : "half_guard_lower_finish",
+                                        "input" : "Y"
+                                    },
+                                    { 
+                                        "text" : "Attack Upper Body",
+                                        "next_state" : "half_guard_upper_finish",
+                                        "input" : "X" 
+                                    },
+                                    { 
+                                        "text" : "Take the Back",
+                                        "next_state" : "halfguard_back",
+                                        "input" : "X" 
+                                    }
+                                    ]
+                    },
+    "RDLR" : {
+                    "text": "<h1>You entered RDLR. What now?</h1>",
+                    "img" : "/imgs/getoutswamp.gif",
+                    "sound" : "/sounds/what-are-you-doing-in-my-swamp-.mp3",
+                    "back_sound" : "/sounds/bkground.mp3",
+                    "next_state" : [ {
+                                        "type" : "button",
+                                        "text" : "False Reap",
+                                        "next_state" : "RDLR_saddle",
+                                        "input" : "Y"
+                                    },
+                                    { 
+                                        "text" : "Take the Back",
+                                        "next_state" : "RDLR_back",
+                                        "input" : "X" 
+                                    }
+                                    ]
+                    },
+    "SLX" : {
+                    "text": "<h1>You entered Single Leg X. What now?</h1>",
+                    "img" : "/imgs/getoutswamp.gif",
+                    "sound" : "/sounds/what-are-you-doing-in-my-swamp-.mp3",
+                    "back_sound" : "/sounds/bkground.mp3",
+                    "next_state" : [ {
+                                        "type" : "button",
+                                        "text" : "Reap and Rip a Heel Hook",
+                                        "next_state" : "SLX_reap",
+                                        "input" : "Y"
+                                    },
+                                    { 
+                                        "text" : "Saddle Entry",
+                                        "next_state" : "SLX_saddle",
+                                        "input" : "X" 
+                                    }
+                                    ]
+                    },
+    "imanari_saddle" : {
+                    "text": "<h1>You entered the Saddle. Finish him.</h1>",
+                    "img" : "/imgs/getoutswamp.gif",
+                    "sound" : "/sounds/what-are-you-doing-in-my-swamp-.mp3",
+                    "back_sound" : "/sounds/bkground.mp3",
+                    "next_state" : [ {
+                                        "type" : "button",
+                                        "text" : "Inside Heel Hook",
+                                        "next_state" : "saddle_inside_heel",
+                                        "input" : "Y"
+                                    },
+                                    { 
+                                        "text" : "Game Over Heel Hook",
+                                        "next_state" : "saddle_game_over",
+                                        "input" : "X" 
+                                    }
+                                    ]
+                    },
+    "RDLR_saddle" : {
+                    "text": "<h1>You entered the Saddle. Finish him.</h1>",
+                    "img" : "/imgs/getoutswamp.gif",
+                    "sound" : "/sounds/what-are-you-doing-in-my-swamp-.mp3",
+                    "back_sound" : "/sounds/bkground.mp3",
+                    "next_state" : [ {
+                                        "type" : "button",
+                                        "text" : "Inside Heel Hook",
+                                        "next_state" : "saddle_inside_heel",
+                                        "input" : "Y"
+                                    },
+                                    { 
+                                        "text" : "Game Over Heel Hook",
+                                        "next_state" : "saddle_game_over",
+                                        "input" : "X" 
+                                    }
+                                    ]
+                    },
+    "SLX_saddle" : {
+                    "text": "<h1>You entered the Saddle. Finish him.</h1>",
+                    "img" : "/imgs/getoutswamp.gif",
+                    "sound" : "/sounds/what-are-you-doing-in-my-swamp-.mp3",
+                    "back_sound" : "/sounds/bkground.mp3",
+                    "next_state" : [ {
+                                        "type" : "button",
+                                        "text" : "Inside Heel Hook",
+                                        "next_state" : "saddle_inside_heel",
+                                        "input" : "Y"
+                                    },
+                                    { 
+                                        "text" : "Game Over Heel Hook",
+                                        "next_state" : "saddle_game_over",
+                                        "input" : "X" 
+                                    }
+                                    ]
+                    },
+    "RDLR_back" : {
+                    "text": "<h1>You took his back. Finish him.</h1>",
+                    "img" : "/imgs/getoutswamp.gif",
+                    "sound" : "/sounds/what-are-you-doing-in-my-swamp-.mp3",
+                    "back_sound" : "/sounds/bkground.mp3",
+                    "next_state" : [ {
+                                        "type" : "button",
+                                        "text" : "RNC",
+                                        "next_state" : "back_rnc",
+                                        "input" : "Y"
+                                    },
+                                    { 
+                                        "text" : "Arm Bar",
+                                        "next_state" : "back_armbar",
+                                        "input" : "X" 
+                                    }
+                                    ]
+                    },
+    "halfguard_back" : {
+                    "text": "<h1>You took his back. Finish him.</h1>",
+                    "img" : "/imgs/getoutswamp.gif",
+                    "sound" : "/sounds/what-are-you-doing-in-my-swamp-.mp3",
+                    "back_sound" : "/sounds/bkground.mp3",
+                    "next_state" : [ {
+                                        "type" : "button",
+                                        "text" : "RNC",
+                                        "next_state" : "back_rnc",
+                                        "input" : "Y"
+                                    },
+                                    { 
+                                        "text" : "Arm Bar",
+                                        "next_state" : "back_armbar",
+                                        "input" : "X" 
+                                    }
+                                    ]
+                    },
+     "half_guard_lower_finish" : { 
+                 "text": "Half guard to SLX to Reap with a Heel Hook Finish",
+                 "img" : "/imgs/man.jpg",
+                 "back_sound" : "",
+                 "next_state" : [ {
+                                     "text" : "Play Again!",
+                                     "next_state" : "start",
+                                     "input" : "Y" 
+                                 }
+                                 ]   
+                 },
+     "half_guard_upper_finish" : { 
+                 "text": "Arm Saddle to Arm Bar Finish",
+                 "img" : "/imgs/nooo.jpg",
+                 "back_sound" : "",
+                 "next_state" : [ { 
+                                     "text" : "Play Again!",
+                                     "next_state" : "start",
+                                     "input" : "Y" 
+                                 }
+                                 ]   
+                 },
+    "saddle_inside_heel" : { 
+                 "text": "Inside Heel Hook Finish",
+                 "img" : "/imgs/man.jpg",
+                 "back_sound" : "",
+                 "next_state" : [ {
+                                     "text" : "Play Again!",
+                                     "next_state" : "start",
+                                     "input" : "Y" 
+                                 }
+                                 ]   
+                 },
+    "saddle_game_over" : { 
+                 "text": "Outside Heel Hook Finish",
+                 "img" : "/imgs/man.jpg",
+                 "back_sound" : "",
+                 "next_state" : [ {
+                                     "text" : "Play Again!",
+                                     "next_state" : "start",
+                                     "input" : "Y" 
+                                 }
+                                 ]   
+                 },
+    "back_rnc" : { 
+                 "text": "RNC Finish",
+                 "img" : "/imgs/man.jpg",
+                 "back_sound" : "",
+                 "next_state" : [ {
+                                     "text" : "Play Again!",
+                                     "next_state" : "start",
+                                     "input" : "Y" 
+                                 }
+                                 ]   
+                 },
+    "back_armbar" : { 
+                 "text": "Arm Bar Finish",
+                 "img" : "/imgs/man.jpg",
+                 "back_sound" : "",
+                 "next_state" : [ {
+                                     "text" : "Play Again!",
+                                     "next_state" : "start",
+                                     "input" : "Y" 
+                                 }
+                                 ]   
+                 },
+    "SLX_reap" : { 
+                 "text": "SLX to Reap with a Heel Hook Finish",
+                 "img" : "/imgs/man.jpg",
+                 "back_sound" : "",
+                 "next_state" : [ {
+                                     "text" : "Play Again!",
+                                     "next_state" : "start",
+                                     "input" : "Y" 
+                                 }
+                                 ]   
+                 },
+    "triangle" : { 
+                 "text": "Flying Triangle.....",
+                 "img" : "/imgs/man.jpg",
+                 "back_sound" : "",
+                 "next_state" : [ {
+                                     "text" : "Play Again!",
+                                     "next_state" : "start",
+                                     "input" : "Y" 
+                                 }
+                                 ]   
+                 }
+ 
+ 
+ }
+ 
+ 
